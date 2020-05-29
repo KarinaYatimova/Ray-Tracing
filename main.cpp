@@ -91,7 +91,7 @@ std::ofstream ofs("./out.ppm", std::ios::binary);
 
 int main() {
     Material ivory(Vec3f(0.2, 0.6, 0.8));
-    Material red_rubber(Vec3f(0.5, 0.7, 0.3));
+    Material red_rubber(Vec3f(0.2, 0.6, 0.3));
 	
     std::vector<Sphere> spheres;
     spheres.push_back(Sphere(Vec3f(-1.0, -1.5, -12), 2, ivory));
