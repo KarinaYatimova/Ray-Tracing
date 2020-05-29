@@ -70,7 +70,7 @@ Vec3f cast_ray(const Vec3f &orig, const Vec3f &dir, const std::vector<Sphere> &s
 
     if (!scene_intersect(orig, dir, spheres, point, N, material)) 
 		{
-        return Vec3f(0.5, 0.8, 0.9); // background color
+        return Vec3f(0.9, 0.5, 0.9); // background color
 		}
 
     float diffuse_light_intensity = 0;
