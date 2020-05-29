@@ -79,7 +79,7 @@ void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights
 	    framebuffer[i+j*width] = cast_ray(Vec3f(0,0,0), dir, spheres, lights);
 	}
     }
-std::ofstream ofs("./out.ppm", std::ios::binary); 
+std::ofstream ofs("./ray.ppm", std::ios::binary); 
     ofs << "P6\n" << width << " " << height << "\n255\n";
     for (size_t i = 0; i < height*width; ++i) {
         for (size_t j = 0; j<3; j++) {
